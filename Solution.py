@@ -8,9 +8,7 @@ for i in range(len(arr)):
     Floor = n // arr[i]
     n = n - (Floor * arr[i])
     out = out + Floor
-    if n:
-        pass
-    else:
+    if not n:
         break
 
 print ("The minimum number of bills is :" + str(out))
